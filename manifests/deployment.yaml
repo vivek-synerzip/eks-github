@@ -16,7 +16,7 @@ spec:
         run: nginx
     spec:
       containers:
-      - image: 322378525166.dkr.ecr.us-east-1.amazonaws.com/github-action:eks-tomcat-aac1ad244fdef6c1492a8839089e38cd1d9ac825
+      - image: 322378525166.dkr.ecr.us-east-1.amazonaws.com/github-action:eks-tomcat-96063867d81f34f82ada5e1ad9a72860b41e76f8
         name: nginx
         ports:
         - containerPort: 80
