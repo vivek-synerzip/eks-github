@@ -16,6 +16,6 @@ spec:
       containers: 
       - 
         name: tomcat
-        image: "vivekbangare2492/tomcat:1"
+        image: 322378525166.dkr.ecr.us-east-1.amazonaws.com/github-action:eks_tomcat_875afdfff56efa8c64d2f5b29b622cc639f28350
         ports: 
         - containerPort: 80
