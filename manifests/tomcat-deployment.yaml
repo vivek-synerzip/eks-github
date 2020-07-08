@@ -18,4 +18,4 @@ spec:
         name: tomcat
         image: 322378525166.dkr.ecr.us-east-1.amazonaws.com/github-action:eks_tomcat_a72bbe82859e3dbcb382837a9bc850d54e0820fc
         ports: 
-        - containerPort: 80
+        - containerPort: 8080
