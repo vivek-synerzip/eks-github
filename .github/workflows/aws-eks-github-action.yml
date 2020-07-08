@@ -29,10 +29,10 @@ jobs:
         ECR_REPOSITORY: github-action
         IMAGE_TAG: eks_tomcat_${{ github.sha }}
       run: |
-        # Build a docker container and
+       # Build a docker container and
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG ./app
-        
-    - name: Push image to Amazon ECR
-      run: |
+        # push it to ECR so that it can
+        # be deployed to ECS. 
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+        echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
         
