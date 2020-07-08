@@ -15,7 +15,7 @@ spec:
     spec: 
       containers: 
       - 
-        image: "vivekbangare2492/ngnix:1"
+        image: "322378525166.dkr.ecr.us-east-1.amazonaws.com/github-action:eks-tomcat-f8dbb252654fdcc3a2e03797d1168f3571869f94"
         name: nginx
         ports: 
         - containerPort: 80
