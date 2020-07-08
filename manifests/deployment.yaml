@@ -3,11 +3,13 @@ apiVersion: apps/v1
 kind: Deployment
 metadata: 
   name: nginx
+  annotations:
+    fluxcd.io/automated: "true"
 spec: 
   selector: 
     matchLabels: 
       run: nginx
-  replicas: 3
+  replicas: 2
   template: 
     metadata: 
       labels: 
