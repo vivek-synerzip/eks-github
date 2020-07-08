@@ -1,5 +1,5 @@
-FROM tomcat:8.0-alpine
-MAINTAINER VIVEK Bangare
-COPY index.htm /usr/local/tomcat/webapps/ecs-demo/index.htm
-EXPOSE 8080
-CMD ["catalina.sh", "run"]
+FROM nginx:1.7.9
+LABEL maintainer = "vivek.bangare@synerzip.com"
+ADD index.html /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
