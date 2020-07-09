@@ -35,7 +35,7 @@ jobs:
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: github-action
-        IMAGE_TAG: eks-tomcat-${{ github.sha }}
+        IMAGE_TAG: eks-nginx-${{ github.sha }}
 
       run: |
        # Build a docker container and
