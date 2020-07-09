@@ -6,6 +6,7 @@ metadata:
   annotations:
     fluxcd.io/automated: true
     flux.weave.works/automated: true
+    fluxcd.io/tag.nginx: glob:3.2.*
 spec:
   selector:
     matchLabels:
