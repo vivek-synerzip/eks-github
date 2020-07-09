@@ -1,0 +1,1 @@
+{"jobID":"d8a15c87-024c-fe9e-bdf8-8c615bb15696","spec":{"type":"policy","cause":{"Message":"","User":"vivek.bangare@synerzip.com"},"spec":{"default:deployment/nginx":{"add":{"tag.nginx":"glob:3.2.*"},"remove":{}}}},"result":null}
