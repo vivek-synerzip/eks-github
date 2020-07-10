@@ -7,12 +7,12 @@ on : [push]
 #  push:
 #    paths:
 #    - app/**
-#  branches:         # array of glob patterns matching against refs/heads. Optional; defaults to all
+#    branches:         # array of glob patterns matching against refs/heads. Optional; defaults to all
 #    - master
-
+  
 jobs:
   build:
-    name: Build-and-Push
+    name: Build
     runs-on: ubuntu-latest
 
     steps:
@@ -35,7 +35,7 @@ jobs:
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: github-action
-        IMAGE_TAG: eks-nginx:${{ github.sha }}
+        IMAGE_TAG: eks-nginx-${{ github.sha }}
 
       run: |
        # Build a docker container and
@@ -44,4 +44,3 @@ jobs:
         # be deployed to ECS. 
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
-        
