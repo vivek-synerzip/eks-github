@@ -17,5 +17,5 @@ spec:
         run: nginx
     spec:
       containers:
-      - image: 322378525166.dkr.ecr.us-east-1.amazonaws.com/github-action:eks-nginx-7ee1708aab313df873e9b33897a89dfe712e0b71
+      - image: 322378525166.dkr.ecr.us-east-1.amazonaws.com/github-action:eks-nginx-ac16750f29041225b1ff9a31986f03a73930d06b
         name: nginx
