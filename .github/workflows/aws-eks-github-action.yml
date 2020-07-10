@@ -7,8 +7,8 @@ on : [push]
 #  push:
 #    paths:
 #    - app/**
-  branches:         # array of glob patterns matching against refs/heads. Optional; defaults to all
-    - master
+#  branches:         # array of glob patterns matching against refs/heads. Optional; defaults to all
+#    - master
 
 jobs:
   build:
