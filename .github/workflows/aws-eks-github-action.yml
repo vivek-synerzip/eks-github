@@ -1,14 +1,14 @@
 name: Build and push the Docker image to ECR 
 
-on :   
-  pull_request:
-    paths:
-    - app/**
-  push:
-    paths:
-    - app/**
-    branches:         # array of glob patterns matching against refs/heads. Optional; defaults to all
-    - master
+on : [push] 
+#  pull_request:
+#    paths:
+#    - app/**
+#  push:
+#    paths:
+#    - app/**
+#    branches:         # array of glob patterns matching against refs/heads. Optional; defaults to all
+#    - master
   
 jobs:
   build:

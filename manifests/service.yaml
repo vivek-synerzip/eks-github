@@ -5,6 +5,7 @@ metadata:
   labels: 
     run: nginx
   name: nginx
+  namespace: synerzip
 spec: 
   ports: 
   - port: 80

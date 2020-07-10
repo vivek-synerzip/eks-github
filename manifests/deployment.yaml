@@ -3,15 +3,14 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx
+  namespace: synerzip
   annotations:
     fluxcd.io/automated: true
-    flux.weave.works/automated: true
-    fluxcd.io/tag.nginx: glob:3.2.*
 spec:
   selector:
     matchLabels:
       run: nginx
-  replicas: 2
+  replicas: 1
   template:
     metadata:
       labels:
